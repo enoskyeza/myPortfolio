@@ -1,0 +1,25 @@
+/* BackgroundSection.css */
+
+.section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-rectangle {
+  position: absolute;
+  top: -100px;
+  left: -30%;
+  width: 50%;
+  height: 150%;
+  transform: rotate(-15deg);
+  background: #F39237; /* Orange color */
+}
+
+.right-rectangle {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000; /* Black color */
+}
