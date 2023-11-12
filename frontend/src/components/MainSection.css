@@ -1,11 +1,22 @@
 .main-section {
     height: 100%;
-    background: red;
 }
 
 .biography-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 300px;
+    text-align: left;
+    color: white;
 }
 
 .image-container {
-
+    background-image: url("../images/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    /*background: red;*/
+    border-radius: 30px;
 }
