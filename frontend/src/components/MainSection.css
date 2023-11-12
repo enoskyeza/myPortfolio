@@ -1,12 +1,11 @@
 .main-section {
     height: 100%;
-    color: white;
+    background: red;
 }
 
 .biography-info {
-    background: rgba(255,45,345,0.1);
-    font-size: 30px;
-    color: white;
-    height: 600px;
+}
+
+.image-container {
 
 }

@@ -1,7 +1,11 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Navigationbar from "./Navigationbar";
 import MainSection from "./MainSection";
 import './BackgroundSection.css';
+
 
 const BackgroundSection = () => {
     return (
@@ -10,11 +14,14 @@ const BackgroundSection = () => {
                 <div className='right-rectangle'></div>
                 <div className='left-rectangle'></div>
             </div>
-            <div className='top-section'>
-                {/* Other content goes here */}
-                <Navigationbar />
-                <MainSection />
-            </div>
+                <Row className='top-section'>
+                    <Col xs={8}>
+                        <MainSection />
+                    </Col>
+                    <Col>
+                        <Navigationbar />
+                    </Col>
+                </Row>
         </section>
 
     );
