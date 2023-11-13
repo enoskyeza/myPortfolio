@@ -17,22 +17,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 225px;
+    padding: 0 40px;
     text-align: left;
     color: white;
 }
 
 h2 {
-    margin-left: 80px;
     font-family: "Open Sans";
     font-weight: 800;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 p {
     font-family: "Open Sans";
     font-weight: 600;
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 15px;
     margin-bottom: 15px;
     line-height: 35px;
@@ -40,19 +39,6 @@ p {
 
 .name-el {
     color: #F39237;
-    margin-left: -80px;
-}
-
-@media screen and (min-width: 768px) {
-    .name-el::before {
-        content: '';
-        display: inline-block;
-        width: 40px; /* Adjust the length of the line as needed */
-        height: 3px; /* Adjust the thickness of the line as needed */
-        background-color: #F39237; /* Adjust the color of the line as needed */
-        margin-right: 35px; /* Adjust the spacing between the line and the content as needed */
-        margin-bottom: 15px;
-    }
 }
 
 .custom-button {
@@ -61,6 +47,7 @@ p {
     position: relative;
     color: white;
     font-weight: bold;
+    font-size: 13px;
     width: 40%;
     margin-top: 15px;
     padding: 15px;
@@ -112,4 +99,47 @@ p {
     font-size: 22px;
     font-weight: bold;
 }
+
+
+@media screen and (min-width: 1157px) {
+    .name-el::before {
+        content: '';
+        display: inline-block;
+        width: 40px; /* Adjust the length of the line as needed */
+        height: 3px; /* Adjust the thickness of the line as needed */
+        background-color: #F39237; /* Adjust the color of the line as needed */
+        margin-right: 35px; /* Adjust the spacing between the line and the content as needed */
+        margin-bottom: 15px;
+    }
+
+    .biography-info {
+        padding: 0 225px;
+    }
+
+    h2 {
+        margin-left: 80px;
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 17px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: 35px;
+    }
+
+    .name-el {
+        color: #F39237;
+        margin-left: -80px;
+    }
+
+    .custom-button {
+        font-size: 15px;
+    }
+}
+
 

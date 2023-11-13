@@ -12,7 +12,8 @@ const MainSection = () => {
                     {/*<Image src={profile} />*/}
                 </Col>
                 <Col md={7} className='biography-info'>
-                        <h2><span className='name-el'>I'M STEVE MILNER.</span> WEB DESIGNER</h2>
+                    <h2><span className='name-el'>I'M STEVE MILNER.</span></h2>
+                    <h2>WEB DESIGNER</h2>
                         <p>I'm a Tunisian based web designer & front‑end developer focused on crafting clean
                             & user‑friendly experiences, I am passionate about building excellent software that
                             improves the lives of those around me. </p>

@@ -9,12 +9,12 @@ const BackgroundSection = () => {
     return (
         <Container className='section-' fluid>
             <div className='bottom-section'>
-                <div className='nav-section-menu'><Navigationbar /></div>
                 <div className='right-rectangle'></div>
                 <div className='left-rectangle'></div>
             </div>
             <div className='top-section'>
-                    <MainSection />
+                <div className='nav-section-menu'><Navigationbar /></div>
+                <MainSection />
             </div>
         </Container>
     );
