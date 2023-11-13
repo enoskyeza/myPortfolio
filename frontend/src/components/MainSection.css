@@ -1,14 +1,6 @@
+
 .main-section {
     height: 100%;
-}
-
-.biography-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 300px;
-    text-align: left;
-    color: white;
 }
 
 .image-container {
@@ -20,3 +12,104 @@
     /*background: red;*/
     border-radius: 30px;
 }
+
+.biography-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 225px;
+    text-align: left;
+    color: white;
+}
+
+h2 {
+    margin-left: 80px;
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 50px;
+}
+
+p {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+.name-el {
+    color: #F39237;
+    margin-left: -80px;
+}
+
+@media screen and (min-width: 768px) {
+    .name-el::before {
+        content: '';
+        display: inline-block;
+        width: 40px; /* Adjust the length of the line as needed */
+        height: 3px; /* Adjust the thickness of the line as needed */
+        background-color: #F39237; /* Adjust the color of the line as needed */
+        margin-right: 35px; /* Adjust the spacing between the line and the content as needed */
+        margin-bottom: 15px;
+    }
+}
+
+.custom-button {
+    border: 2px solid #F39237;
+    background-color: transparent;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    margin-top: 15px;
+    padding: 15px;
+    padding-right: 45px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s;
+    z-index: 100;
+}
+
+.custom-button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* styles.css */
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    border-radius: 0px;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #F39237; /* Change the fill color to match your button style */
+    transition: width 0.5s ease-in-out;
+    z-index: -10;
+}
+
+.custom-button:hover::before {
+    width: 100%;
+}
+
+.custom-button::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '→'; /* Arrow character or replace with an icon */
+    display: block;
+    width: 55px;
+    height: 100%;
+    border-radius: 50%; /* Make it circular */
+    background-color: #F39237; /* Change the background color of the circle */
+    color: white; /* Change the color of the arrow icon */
+    margin-left: 10px; /* Adjust the spacing between the button text and the arrow */
+    line-height: 50px; /* Center the arrow vertically */
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+

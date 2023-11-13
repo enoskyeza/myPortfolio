@@ -1,11 +1,9 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { IoIosArrowForward } from 'react-icons/io';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
 import './MainSection.css';
-import profile from '../images/profile.jpeg'
 
 const MainSection = () => {
     return (
@@ -18,7 +16,9 @@ const MainSection = () => {
                         <p>I'm a Tunisian based web designer & front‑end developer focused on crafting clean
                             & user‑friendly experiences, I am passionate about building excellent software that
                             improves the lives of those around me. </p>
-                        <Button variant="outline-warning">MORE ABOUT ME</Button>
+                        <button className="custom-button">
+                            MORE ABOUT ME
+                        </button>
                 </Col>
             </Row>
     );
