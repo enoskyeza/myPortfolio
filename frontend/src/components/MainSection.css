@@ -4,7 +4,7 @@
 }
 
 .image-container {
-    background-image: url("../images/profile.jpeg");
+    background-image: url("../images/profile-01.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ p {
 }
 
 
-@media screen and (min-width: 1157px) {
+@media screen and (min-width: 1445px) {
     .name-el::before {
         content: '';
         display: inline-block;
@@ -113,7 +113,8 @@ p {
     }
 
     .biography-info {
-        padding: 0 225px;
+        padding-right: 225px;
+        padding-left: 150px;
     }
 
     h2 {
@@ -142,4 +143,10 @@ p {
     }
 }
 
+@media screen and (min-width: 1245px) and (max-width: 1444px) {
+  .biography-info {
+    padding-left: 100px;
+    padding-right: 140px;
+  }
+}
 

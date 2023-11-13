@@ -12,9 +12,9 @@ const MainSection = () => {
                     {/*<Image src={profile} />*/}
                 </Col>
                 <Col md={7} className='biography-info'>
-                    <h2><span className='name-el'>I'M STEVE MILNER.</span></h2>
-                    <h2>WEB DESIGNER</h2>
-                        <p>I'm a Tunisian based web designer & front‑end developer focused on crafting clean
+                    <h2><span className='name-el'>I'M KYEZA ENOS</span></h2>
+                    <h2>SOFTWARE DEVELOPER</h2>
+                        <p>I'm a Uganda based web designer & back‑end developer focused on crafting clean
                             & user‑friendly experiences, I am passionate about building excellent software that
                             improves the lives of those around me. </p>
                         <button className="custom-button">
